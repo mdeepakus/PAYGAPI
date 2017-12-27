@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Flurl" Version="2.5.2" />
+    <PackageReference Include="Flurl.Http" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.1" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.1.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.5" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PAYG.Doamin\PAYG.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PAYG.Server</name>
+    </assembly>
+    <members>
+        <member name="T:PAYG.Server.Features.Authentication.AuthController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.AuthController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.AuthController.Login(PAYG.Server.Features.Authentication.Login.Command)">
+            <summary>
+            
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.AuthController.Logout">
+            <summary>
+            Logs out of the application
+            </summary>
+            <returns>Ok</returns>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.AuthController.RegisterNewUser(PAYG.Server.Features.Authentication.RegisterUser.Command)">
+            <summary>
+            
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.Login">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.Login.Command">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Command.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Command.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.Login.Validator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.Login.Validator.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.Login.Result">
+            <summary>
+            Resul;t
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Result.Token">
+            <summary>
+            Authentication Token
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Result.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Result.Username">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.Login.Result.ActionMessage">
+            <summary>
+            Date of last password change
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.Login.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.Login.Handler.#ctor(MediatR.IMediator,PAYG.Domain.Services.IUserService,PAYG.Infrastructure.Authentication.ITokenProvider)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="userService"></param>
+            <param name="tokenProvider"></param>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.Login.Handler.Handle(PAYG.Server.Features.Authentication.Login.Command)">
+            <summary>
+            
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.RegisterUser.Command">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.userName">
+            <summary>
+            User Name
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.password">
+            <summary>
+            New password
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.ConfirmPassword">
+            <summary>
+            Confirm new password
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.RegisterUser.Validator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.RegisterUser.Validator.#ctor(PAYG.Server.Validators.User.IUserValidator)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Authentication.RegisterUser.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Authentication.RegisterUser.Handler.Handle(PAYG.Server.Features.Authentication.RegisterUser.Command)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PAYG.Server.Features.Vehicles.VehicleQuery.VehicleID">
+            <summary>
+            VehicleID
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Vehicles.VehiclesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Vehicles.VehiclesController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PAYG.Server.Features.Vehicles.VehiclesController.GetVehicle(PAYG.Server.Features.Vehicles.GetVehicle.Query)">
+            <summary>
+            Retrieve a single vehicle
+            </summary>
+            <param name="query">query parameter</param>
+            <returns>Client details</returns>
+        </member>
+        <member name="T:PAYG.Server.Infrastructure.FeatureViewLocationExpander">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.FeatureViewLocationExpander.ExpandViewLocations(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="viewLocations"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PAYG.Server.Infrastructure.Filters.DbTransactionFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.Filters.DbTransactionFilter.#ctor(PAYG.Infrastructure.Repository.ITransactionManager)">
+            <summary>
+            
+            </summary>
+            <param name="transactionManager"></param>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.Filters.DbTransactionFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PAYG.Server.Infrastructure.Filters.ValidatorActionFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.Filters.ValidatorActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.Filters.ValidatorActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:PAYG.Server.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Start Up
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:PAYG.Server.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PAYG.Server.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:PAYG.Server.Validators.User.IUserValidator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Validators.User.UserNameValidator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Validators.User.UserNameValidator.#ctor(PAYG.Domain.RepositoryInterfaces.IUserRepository)">
+            <summary>
+            
+            </summary>
+            <param name="userRepository"></param>
+        </member>
+        <member name="M:PAYG.Server.Validators.User.UserNameValidator.ValidateUserExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PureBroker.Server.Infrastructure.Filters.HandleErrorFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PureBroker.Server.Infrastructure.Filters.HandleErrorFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

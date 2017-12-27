@@ -1,0 +1,3 @@
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYG.Doamin\obj\Debug\netstandard2.0\PAYG.Doamin.csproj.CoreCompileInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYG.Doamin\obj\Debug\netstandard2.0\PAYG.Doamin.AssemblyInfoInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYG.Doamin\obj\Debug\netstandard2.0\PAYG.Doamin.AssemblyInfo.cs

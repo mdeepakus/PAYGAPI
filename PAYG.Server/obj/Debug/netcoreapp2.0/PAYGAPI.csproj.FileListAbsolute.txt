@@ -1,0 +1,15 @@
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYGAPI.deps.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYGAPI.runtimeconfig.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYGAPI.runtimeconfig.dev.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYGAPI.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYGAPI.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYG.Domain.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYG.Infrastructure.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYG.Domain.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\bin\Debug\netcoreapp2.0\PAYG.Infrastructure.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.csprojResolveAssemblyReference.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.csproj.CoreCompileInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.AssemblyInfoInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.AssemblyInfo.cs
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYGAPI\PAYGAPI\obj\Debug\netcoreapp2.0\PAYGAPI.pdb

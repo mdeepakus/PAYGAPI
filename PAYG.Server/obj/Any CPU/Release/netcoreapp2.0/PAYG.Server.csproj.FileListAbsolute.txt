@@ -1,0 +1,15 @@
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Server.deps.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Server.runtimeconfig.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Server.runtimeconfig.dev.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Server.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Server.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Domain.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Infrastructure.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Domain.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\bin\Any CPU\Release\netcoreapp2.0\PAYG.Infrastructure.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.csprojResolveAssemblyReference.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.csproj.CoreCompileInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.AssemblyInfoInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.AssemblyInfo.cs
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\obj\Any CPU\Release\netcoreapp2.0\PAYG.Server.pdb

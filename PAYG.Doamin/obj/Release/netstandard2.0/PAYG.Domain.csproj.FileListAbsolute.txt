@@ -1,0 +1,13 @@
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\PAYG.Domain.deps.json
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\PAYG.Domain.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\PAYG.Domain.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\bin\Release\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.csproj.CoreCompileInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.AssemblyInfoInputs.cache
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.AssemblyInfo.cs
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.dll
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.pdb
+C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Doamin\obj\Release\netstandard2.0\PAYG.Domain.csprojResolveAssemblyReference.cache
