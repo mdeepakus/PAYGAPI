@@ -35,7 +35,7 @@ using PAYG.Server.Validators.User;
 namespace PAYG.Server
 {
     /// <summary>
-    /// deepak
+    /// deepak mittal
     /// </summary>
     public class Startup
     {
