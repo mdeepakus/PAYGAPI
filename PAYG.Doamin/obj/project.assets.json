@@ -186,11 +186,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj",
       "projectName": "PAYG.Domain",
-      "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj",
+      "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj",
       "packagesPath": "C:\\Users\\deepak.mittal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\obj\\",
+      "outputPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

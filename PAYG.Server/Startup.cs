@@ -34,6 +34,9 @@ using PAYG.Server.Validators.User;
 
 namespace PAYG.Server
 {
+    /// <summary>
+    /// deepak
+    /// </summary>
     public class Startup
     {
         private const string SecretKey = "mysupersecretkey!123";

@@ -5633,11 +5633,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj",
       "projectName": "PAYG.Infrastructure",
-      "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\deepak.mittal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5656,8 +5656,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj": {
-              "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj"
+            "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj": {
+              "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj"
             }
           }
         }

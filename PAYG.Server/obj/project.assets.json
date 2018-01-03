@@ -13590,11 +13590,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Server\\PAYG.Server.csproj",
+      "projectUniqueName": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Server\\PAYG.Server.csproj",
       "projectName": "PAYG.Server",
-      "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Server\\PAYG.Server.csproj",
+      "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Server\\PAYG.Server.csproj",
       "packagesPath": "C:\\Users\\deepak.mittal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Server\\obj\\",
+      "outputPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13613,11 +13613,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj": {
-              "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Doamin\\PAYG.Domain.csproj"
+            "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj": {
+              "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Doamin\\PAYG.Domain.csproj"
             },
-            "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\deepak.mittal\\Desktop\\AndriodApps\\PAYGAPI\\PAYG\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj"
+            "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\deepak.mittal\\Documents\\GitHub\\PAYGAPI\\PAYG.Infrastructure\\PAYG.Infrastructure.csproj"
             }
           }
         }
