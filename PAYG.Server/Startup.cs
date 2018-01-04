@@ -185,6 +185,9 @@ namespace PAYG.Server
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ITokenProvider, TokenProvider>();
             services.AddScoped<IUserValidator, UserNameValidator>();
+            services.AddScoped<IJourneyService, JourneyService>();
+            services.AddScoped<IJourneyRepository, JourneyRepository>();
+            services.AddScoped<IJourneyDetailsRepository, JourneyDetailsRepository>();
 
         }
 

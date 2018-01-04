@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PAYG.Domain.Common;
-using PureBroker.Server.Infrastructure.Filters;
+using PAYG.Server.Infrastructure.Filters;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;

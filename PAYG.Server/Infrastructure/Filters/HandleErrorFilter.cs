@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 
-namespace PureBroker.Server.Infrastructure.Filters
+namespace PAYG.Server.Infrastructure.Filters
 {
     /// <summary>
     /// 
