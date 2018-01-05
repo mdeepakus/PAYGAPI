@@ -1,8 +1,8 @@
-C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server
+C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server
 --output-path=obj\Any CPU\Release\netcoreapp2.0\
 --application-name=PAYG.Server
---content-root=C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server
---file=C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\Features\Shared\Error.cshtml
---file=C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\Features\Shared\_Layout.cshtml
---file=C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\Features\_ViewImports.cshtml
---file=C:\Users\deepak.mittal\Desktop\AndriodApps\API\PAYG\PAYG.Server\Features\_ViewStart.cshtml
+--content-root=C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server
+--file=C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server\Features\Shared\Error.cshtml
+--file=C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server\Features\Shared\_Layout.cshtml
+--file=C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server\Features\_ViewImports.cshtml
+--file=C:\Users\deepak.mittal\Documents\GitHub\PAYGAPI\PAYG.Server\Features\_ViewStart.cshtml

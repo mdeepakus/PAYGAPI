@@ -152,6 +152,66 @@
             <param name="message"></param>
             <returns></returns>
         </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd.Command">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Journey.JourneyAdd.Command.VehicleCoordinates">
+            <summary>
+            List of corodinates
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd.Result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Journey.JourneyAdd.Result.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd.JourneyDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Journey.JourneyAdd.Handler.Handle(PAYG.Server.Features.Journey.JourneyAdd.Command)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Features.Journey.JourneyController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PAYG.Server.Features.Journey.JourneyController.AddUserJourney(PAYG.Server.Features.Journey.JourneyAdd.Command)">
+            <summary>
+            
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
         <member name="P:PAYG.Server.Features.Vehicles.VehicleQuery.VehicleID">
             <summary>
             VehicleID
@@ -207,6 +267,17 @@
             <param name="next"></param>
             <returns></returns>
         </member>
+        <member name="T:PAYG.Server.Infrastructure.Filters.HandleErrorFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PAYG.Server.Infrastructure.Filters.HandleErrorFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
         <member name="T:PAYG.Server.Infrastructure.Filters.ValidatorActionFilter">
             <summary>
             
@@ -223,6 +294,11 @@
             
             </summary>
             <param name="context"></param>
+        </member>
+        <member name="T:PAYG.Server.Startup">
+            <summary>
+            deepak mittal 
+            </summary>
         </member>
         <member name="M:PAYG.Server.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
@@ -270,17 +346,6 @@
             </summary>
             <param name="userName"></param>
             <returns></returns>
-        </member>
-        <member name="T:PureBroker.Server.Infrastructure.Filters.HandleErrorFilter">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:PureBroker.Server.Infrastructure.Filters.HandleErrorFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
-            <summary>
-            
-            </summary>
-            <param name="context"></param>
         </member>
     </members>
 </doc>
