@@ -23,14 +23,17 @@ namespace PAYG.Server.Features.Journey
         {
             public Command()
             {
-                journeyDetails = new List<JourneyDetails>();
+                VehicleCoordinates = new List<JourneyDetail>();
             }
 
             public int VehicleId { get; set; }
             public int UserId { get; set; }
             public DateTime? StarteDate { get; set; }
             public DateTime? EndDate { get; set; }
-            public List<JourneyDetails> journeyDetails { get; set; }
+            /// <summary>
+            /// List of corodinates
+            /// </summary>
+            public List<JourneyDetail> VehicleCoordinates { get; set; }
         }
         /// <summary>
         /// 
@@ -43,20 +46,24 @@ namespace PAYG.Server.Features.Journey
             public int Id { get; set; }
         }
 
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        //public class JourneyDetail
-        //{
-        //    public int Id { get; set; }
-        //    public string Logitude { get; set; }
-        //    public string Latitude { get; set; }
-        //}
+        /// <summary>
+        /// 
+        /// </summary>
+        public class JourneyDetail
+        {
+            public string Logitude { get; set; }
+            public string Latitude { get; set; }
+        }
 
         public class Validator : AbstractValidator<Command>
         {
             public Validator()
             {
+                RuleFor(c => c.UserId).GreaterThan(0).WithMessage("User id is mandatory");
+                RuleFor(c => c.VehicleId).GreaterThan(0).WithMessage("Vehicle id is mandatory");
+                RuleFor(c => c.StarteDate).NotEmpty().WithMessage("Start date is mandatory");
+                RuleFor(c => c.EndDate).NotEmpty().WithMessage("End date is mandatory");
+                RuleFor(c => c.VehicleCoordinates).NotEmpty();
                 //yet to implement
             }
         }
@@ -87,7 +94,18 @@ namespace PAYG.Server.Features.Journey
                     StarteDate = message.StarteDate,
                     EndDate = message.EndDate
                 };
-                int journeyId = await _journeyService.AddJourney(message.journeyDetails, journey);
+
+                var coordinates = new List<PAYG.Domain.Entities.JourneyDetails>();
+                foreach (var listdata in message.VehicleCoordinates)
+                {
+                    var data = new PAYG.Domain.Entities.JourneyDetails();
+                    data.Latitude = listdata.Latitude;
+                    data.Logitude = listdata.Logitude;
+                    coordinates.Add(data);
+                }
+
+
+                int journeyId = await _journeyService.AddJourney(coordinates, journey);
                 return new Result { Id = journeyId };
             }
         }

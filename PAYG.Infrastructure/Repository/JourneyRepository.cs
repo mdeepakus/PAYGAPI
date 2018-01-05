@@ -25,14 +25,14 @@ namespace PAYG.Infrastructure.Repository
                     Vehicle_id,
 					user_id,
 					Startdate,
-					Enddate,
+					Enddate
                 )
                 VALUES
                 (
                     @vehicle_id,
                     @user_id,
-                    @start_date
-                    @end_date,
+                    @start_date,
+                    @end_date
                 )
                 SELECT @journey_id = @@IDENTITY
                 

@@ -162,12 +162,22 @@
             
             </summary>
         </member>
+        <member name="P:PAYG.Server.Features.Journey.JourneyAdd.Command.VehicleCoordinates">
+            <summary>
+            List of corodinates
+            </summary>
+        </member>
         <member name="T:PAYG.Server.Features.Journey.JourneyAdd.Result">
             <summary>
             
             </summary>
         </member>
         <member name="P:PAYG.Server.Features.Journey.JourneyAdd.Result.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PAYG.Server.Features.Journey.JourneyAdd.JourneyDetail">
             <summary>
             
             </summary>

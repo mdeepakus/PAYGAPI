@@ -19,7 +19,7 @@ namespace PAYG.Infrastructure.Repository
         {
             var sql = @"INSERT INTO JourneyDetails
                 (
-                    journey_id
+                    journey_id,
                     logitude,
 					latitude
                 )
