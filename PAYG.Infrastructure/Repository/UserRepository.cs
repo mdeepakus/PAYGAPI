@@ -26,7 +26,7 @@ namespace PAYG.Infrastructure.Repository
         /// <param name="userName"></param>
         /// <param name="hashedPassword"></param>
         /// <returns></returns>
-        public async Task<int> CreateConsumerUser(string userName, string hashedPassword)
+        public async Task<int> CreateConsumerUser(string userName, string hashedPassword, RegisterNewUser userDetails)
         {
             Ensure.ArgumentNotNull(userName, nameof(userName));
             Ensure.ArgumentNotNull(hashedPassword, nameof(hashedPassword));
@@ -37,7 +37,17 @@ namespace PAYG.Infrastructure.Repository
                     user_name,
                     password,
                     user_type,
-                    is_deleted
+                    is_deleted,
+                    email_address,
+                    first_name,
+                    last_name,
+                    mobile_number,
+                    date_created,
+                    address_line1,
+                    address_line2,
+                    address_line3,
+                    city,
+                    country
                     )
                 values
                     (
@@ -45,12 +55,36 @@ namespace PAYG.Infrastructure.Repository
                     @userName,
                     @hashedPassword,
                     'CONSUMER',
-                    0
+                    0,
+                    @emailAddress,
+                    @firstName,
+                    @lastName,
+                    @mobileNumber,
+                    GETDATE(),
+                    @addressLine1,
+                    @addressLine2,
+                    @addressLine3,
+                    @city,
+                    @country
                     )
                 SELECT @@IDENTITY;
                 ";
 
-            var id = await _dataRepository.DbConnection.QueryAsync<int>(strSQL, new { userName, hashedPassword },
+            var parameters = new
+            {
+                userName = userName,
+                hashedPassword = hashedPassword,
+                emailAddress = userDetails.EmailAddress,
+                firstName = userDetails.FirstName,
+                lastName = userDetails.LastName,
+                mobileNumber = userDetails.MobileNumber,
+                addressLine1 = userDetails.AddressLine1,
+                addressLine2 = userDetails.AddressLine2,
+                addressLine3 = userDetails.AddressLine3,
+                city = userDetails.City,
+                country = userDetails.Country
+            };
+            var id = await _dataRepository.DbConnection.QueryAsync<int>(strSQL, parameters,
                 transaction: _dataRepository.DbTransaction);
 
             return id.SingleOrDefault();

@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using PAYG.Domain.Entities;
 using PAYG.Domain.Services;
 using PAYG.Server.Validators.User;
 using System;
@@ -20,17 +21,21 @@ namespace PAYG.Server.Features.Authentication
             /// <summary>
             /// User Name
             /// </summary>
-            public string userName { get; set; }
+            public string UserName { get; set; }
 
             /// <summary>
             /// New password
             /// </summary>
-            public string password { get; set; }
+            public string Password { get; set; }
 
             /// <summary>
             /// Confirm new password
             /// </summary>
             public string ConfirmPassword { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public RegisterNewUser UserDetails { get; set; }
         }
 
         /// <summary>
@@ -46,15 +51,20 @@ namespace PAYG.Server.Features.Authentication
             {
                 _userValidator = userValidator;
 
-                RuleFor(v => v.userName).NotEmpty().WithMessage("A user name must be supplied");
-                RuleFor(v => v.password).NotEmpty().WithMessage("A new password must be supplied");
+                RuleFor(v => v.UserName).NotEmpty().WithMessage("A user name must be supplied");
+                RuleFor(v => v.Password).NotEmpty().WithMessage("A new password must be supplied");
                 RuleFor(v => v.ConfirmPassword).NotEmpty().WithMessage("A confirmation password must be supplied");
-                RuleFor(v => v.password).Equal(c => c.ConfirmPassword).WithMessage("Password and confirm password must match");
+                RuleFor(v => v.Password).Equal(c => c.ConfirmPassword).WithMessage("Password and confirm password must match");
 
-                RuleFor(v => v.userName)
+                RuleFor(v => v.UserName)
                     .Must((command, userName) => UserNameValidation(command, userName).Result)
-                                    .WithMessage(x => string.Format("User name: {0} is already in use.", x.userName));
-
+                                    .WithMessage(x => string.Format("User name: {0} is already in use.", x.UserName));
+                RuleFor(v => v.UserDetails.EmailAddress).NotEmpty().WithMessage("Email Adrress must be supplied");
+                RuleFor(v => v.UserDetails.FirstName).NotEmpty().WithMessage("First name must be supplied");
+                RuleFor(v => v.UserDetails.LastName).NotEmpty().WithMessage("Last name must be supplied");
+                RuleFor(v => v.UserDetails.City).NotEmpty().WithMessage("City must be supplied");
+                RuleFor(v => v.UserDetails.Country).NotEmpty().WithMessage("Country must be supplied");
+                RuleFor(v => v.UserDetails.AddressLine1).NotEmpty().WithMessage("Address Line 1 must be supplied");
 
             }
 
@@ -85,12 +95,12 @@ namespace PAYG.Server.Features.Authentication
             /// <returns></returns>
             public async Task<Login.Result> Handle(Command message)
             {
-                var userId = await _service.RegisterConsumerUser(message.userName, message.password, message.ConfirmPassword);
+                var userId = await _service.RegisterConsumerUser(message.UserName, message.Password, message.ConfirmPassword, message.UserDetails);
 
                 var loginCommand = new Login.Command
                 {
-                    UserName = message.userName,
-                    Password = message.password,
+                    UserName = message.UserName,
+                    Password = message.Password,
                 };
 
                 return await _mediator.Send(loginCommand);

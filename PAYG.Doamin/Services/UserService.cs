@@ -57,7 +57,7 @@ namespace PAYG.Domain.Services
             return _passwordHasher.IsPasswordValid(accountPassword, testPassword);
         }
 
-        public async Task<int> RegisterConsumerUser(string userName, string password, string confirmPassword)
+        public async Task<int> RegisterConsumerUser(string userName, string password, string confirmPassword, RegisterNewUser userDetails)
         {
             Ensure.ArgumentNotNull(userName, nameof(userName));
             Ensure.ArgumentNotNull(password, nameof(password));
@@ -68,7 +68,7 @@ namespace PAYG.Domain.Services
                 throw new ApiException("Password does not meet complexity requirements.");
             }
 
-            int userId = await _repository.CreateConsumerUser(userName, _passwordHasher.Hash(password));
+            int userId = await _repository.CreateConsumerUser(userName, _passwordHasher.Hash(password), userDetails);
 
             return userId;
         }

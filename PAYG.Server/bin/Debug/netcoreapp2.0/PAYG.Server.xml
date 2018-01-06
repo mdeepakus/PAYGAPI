@@ -115,12 +115,12 @@
             
             </summary>
         </member>
-        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.userName">
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.UserName">
             <summary>
             User Name
             </summary>
         </member>
-        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.password">
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.Password">
             <summary>
             New password
             </summary>
@@ -128,6 +128,11 @@
         <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.ConfirmPassword">
             <summary>
             Confirm new password
+            </summary>
+        </member>
+        <member name="P:PAYG.Server.Features.Authentication.RegisterUser.Command.UserDetails">
+            <summary>
+            
             </summary>
         </member>
         <member name="T:PAYG.Server.Features.Authentication.RegisterUser.Validator">

@@ -9,6 +9,6 @@ namespace PAYG.Domain.Services
     {
         Task<ActionResult<ApplicationUser>> UserLogon(string username, string password);
 
-        Task<int> RegisterConsumerUser(string userName, string password, string confirmPassword);
+        Task<int> RegisterConsumerUser(string userName, string password, string confirmPassword, RegisterNewUser userDetails);
     }
 }

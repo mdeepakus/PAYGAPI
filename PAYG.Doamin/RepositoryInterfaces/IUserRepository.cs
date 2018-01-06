@@ -12,7 +12,7 @@ namespace PAYG.Domain.RepositoryInterfaces
 
         Task<ApplicationUser> GetApplicationUser(string userName);
 
-        Task<int> CreateConsumerUser(string userName, string hashedPassword);
+        Task<int> CreateConsumerUser(string userName, string hashedPassword, RegisterNewUser userDetails);
 
         Task<bool> UserExists(string userName);
     }
