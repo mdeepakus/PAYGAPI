@@ -34,7 +34,7 @@ namespace PAYG.Infrastructure.Repository
 
             var sql =
                 "select vehicleId, registrationnumber, make, model " +
-                "from VehicleDetails where vehicleid = @vehicleId";
+                "from Vehicle where vehicleid = @vehicleId";
 
             var data = await  _dataRepository.QueryAsync(sql, new { vehicleId });
 

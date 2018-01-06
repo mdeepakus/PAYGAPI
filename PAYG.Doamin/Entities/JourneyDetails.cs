@@ -7,7 +7,7 @@ namespace PAYG.Domain.Entities
     public class JourneyDetails
     {
         public int Id { get; set; }
-        public string Logitude { get; set;}
+        public string Longitude { get; set;}
         public string Latitude { get; set; }
 
 

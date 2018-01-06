@@ -32,7 +32,7 @@ namespace PAYG.Infrastructure.Repository
             Ensure.ArgumentNotNull(hashedPassword, nameof(hashedPassword));
 
             string strSQL = @"
-                INSERT INTO PAYGUser
+                INSERT INTO UserInfo
                     (
                     user_name,
                     password,
@@ -111,7 +111,7 @@ namespace PAYG.Infrastructure.Repository
             }
 
             var sql = @"
-                SELECT user_id FROM PAYGUser 
+                SELECT user_id FROM UserInfo 
                 WHERE user_name = @UserName
                 ";
 
@@ -132,7 +132,7 @@ namespace PAYG.Infrastructure.Repository
 
             var sql = @"
                 SELECT user_id, user_name, password
-                FROM PAYGUser usr
+                FROM UserInfo usr
                 WHERE ISNULL(is_deleted, 0) = 0
             ";
 

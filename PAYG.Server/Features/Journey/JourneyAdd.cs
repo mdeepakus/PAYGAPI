@@ -51,7 +51,7 @@ namespace PAYG.Server.Features.Journey
         /// </summary>
         public class JourneyDetail
         {
-            public string Logitude { get; set; }
+            public string Longitude { get; set; }
             public string Latitude { get; set; }
         }
 
@@ -100,7 +100,7 @@ namespace PAYG.Server.Features.Journey
                 {
                     var data = new PAYG.Domain.Entities.JourneyDetails();
                     data.Latitude = listdata.Latitude;
-                    data.Logitude = listdata.Logitude;
+                    data.Longitude = listdata.Longitude;
                     coordinates.Add(data);
                 }
 

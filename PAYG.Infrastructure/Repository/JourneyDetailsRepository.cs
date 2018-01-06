@@ -20,19 +20,19 @@ namespace PAYG.Infrastructure.Repository
             var sql = @"INSERT INTO JourneyDetails
                 (
                     journey_id,
-                    logitude,
+                    longitude,
 					latitude
                 )
                 VALUES
                 (
                     @journey_id,
-                    @logitude,
+                    @longitude,
                     @latitude
                 )";
             var parameters = new
             {
                 journey_id = journeyId,
-                logitude = journeyDetails.Logitude,
+                longitude = journeyDetails.Longitude,
                 latitude = journeyDetails.Latitude
             };
 
