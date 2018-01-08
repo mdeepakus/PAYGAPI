@@ -31,6 +31,8 @@ using Microsoft.IdentityModel.Tokens;
 using PAYG.Server.Infrastructure.Filters;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using PAYG.Server.Validators.User;
+using Microsoft.AspNetCore.Http;
+using PureBroker.Domain.Services;
 
 namespace PAYG.Server
 {
@@ -166,6 +168,7 @@ namespace PAYG.Server
                    };
                });
 
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             // Database
             //services.TryAddScoped<IDbConnection>(_ => new SqlConnection("Data Source=IN00268;Initial Catalog=SiriusSR15;Persist Security Info=True;User ID=sirius;Password=$1R1U5;"));
             //services.TryAddScoped<IDbConnection>(_ => new SqlConnection(Configuration.GetConnectionString("DefaultConnection")));
@@ -187,7 +190,12 @@ namespace PAYG.Server
             services.AddScoped<IUserValidator, UserNameValidator>();
             services.AddScoped<IJourneyService, JourneyService>();
             services.AddScoped<IJourneyRepository, JourneyRepository>();
-            
+
+
+            services.TryAddScoped<IContextAccessor>(sp => new ContextAccessor(
+                sp.GetService<IHttpContextAccessor>(),
+                sp.GetService<IUserRepository>()));
+
         }
 
         /// <summary>

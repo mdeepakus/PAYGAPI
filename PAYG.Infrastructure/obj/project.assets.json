@@ -1704,6 +1704,9 @@
       "PAYG.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.0.1"
+        },
         "compile": {
           "bin/placeholder/PAYG.Domain.dll": {}
         },

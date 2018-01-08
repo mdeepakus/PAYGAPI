@@ -15,5 +15,6 @@ namespace PAYG.Domain.RepositoryInterfaces
         Task<int> Add(Journey journey);
 
         Task AddJourneyDetails(JourneyDetails journeyDetails, int journeyId);
+        
     }
 }

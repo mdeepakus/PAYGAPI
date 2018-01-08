@@ -26,7 +26,8 @@ namespace PAYG.Infrastructure.Authentication
 
             var claims = new Claim[]
             {
-                new Claim(ClaimTypes.Name, user.Username, ClaimValueTypes.String)
+                new Claim(ClaimTypes.Name, user.Username, ClaimValueTypes.String),
+                new Claim(ClaimTypes.Role, "Consumer", ClaimValueTypes.String)
             };
 
             var genericIdentity = new GenericIdentity(user.UserId.ToString(), "TokenAuth");

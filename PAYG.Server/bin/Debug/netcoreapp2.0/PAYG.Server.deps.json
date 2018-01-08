@@ -4262,6 +4262,9 @@
         }
       },
       "PAYG.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.0.1"
+        },
         "runtime": {
           "PAYG.Domain.dll": {}
         },

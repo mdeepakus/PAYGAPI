@@ -34,8 +34,8 @@ namespace PAYG.Infrastructure.Repository
                     @user_id,
                     @start_date,
                     @end_date
-                )
-                SELECT @journey_id = @@IDENTITY
+                );
+                SELECT @journey_id = SCOPE_IDENTITY();
                 
                 SELECT @journey_id";
 
@@ -95,5 +95,7 @@ namespace PAYG.Infrastructure.Repository
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

@@ -1,7 +1,9 @@
 ﻿using MediatR;
 using PAYG.Domain.Common;
 using PAYG.Domain.Entities;
+using PAYG.Domain.Extensions;
 using PAYG.Domain.RepositoryInterfaces;
+using PAYG.Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +29,14 @@ namespace PAYG.Server.Features.Vehicles
             public string RegistrationNumber { get; set; }
             public string Make { get; set; }
             public string Model { get; set; }
+            public string Type { get; set; }
+
         }
 
         public class Handler : IAsyncRequestHandler<Query, Result>
         {
             private readonly IVehiclesRepository _repository;
-
+            
             public Handler(IVehiclesRepository repository)
             {
                 _repository = repository;
@@ -40,7 +44,7 @@ namespace PAYG.Server.Features.Vehicles
             public async Task<Result> Handle(Query query)
             {
                 var data = await _repository.Get(query.VehicleID);
-
+                
                 if (data == null)
                 {
 
@@ -52,7 +56,8 @@ namespace PAYG.Server.Features.Vehicles
                     Id = data.Id,
                     RegistrationNumber = data.RegistrationNumber,
                     Make = data.Make,
-                    Model = data.Model
+                    Model = data.Model,
+                    Type = data.Type
                 };
 
                 return await Task.FromResult(result);

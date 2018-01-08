@@ -17,9 +17,45 @@ namespace PAYG.Infrastructure.Repository
         {
             _dataRepository = dataRepository;
         }
-        public Task<Vehicle> Add(Vehicle vehicle, int userId)
+        public async Task<Vehicle> Add(Vehicle vehicle, int userId)
         {
-            throw new NotImplementedException();
+            Ensure.ArgumentNotNull(vehicle, nameof(vehicle));
+            Ensure.ArgumentNotNull(userId, nameof(userId));
+
+            var sql =
+                @"DECLARE @Vehicle_id INT
+                INSERT INTO Vehicle
+                    ([registrationnumber]
+                    ,[make]
+                    ,[model]
+                    ,[type]
+                    ,[user_id])
+                 VALUES
+                    (
+                    @registrationnumber,
+                    @make,
+                    @model,
+                    @type,
+                    @user_id
+                    );
+                    
+                    SELECT @Vehicle_id = SCOPE_IDENTITY();";
+
+            var parameters = new
+            {
+                registrationnumber = vehicle.RegistrationNumber,
+                make = vehicle.Make,
+                model = vehicle.Model,
+                type = vehicle.Type,
+                user_id = userId
+            };
+
+            var vehicleId = await _dataRepository.ExecuteScalar<int>(sql, parameters);
+            var vehicledetails = await Get(vehicleId);
+
+
+            return vehicledetails;
+
         }
 
         public Task Delete(int vehicleId, int userId)
@@ -33,7 +69,7 @@ namespace PAYG.Infrastructure.Repository
             Ensure.ArgumentNotNull(vehicleId, nameof(vehicleId));
 
             var sql =
-                "select vehicleId, registrationnumber, make, model " +
+                "select vehicleId, registrationnumber, make, model, type " +
                 "from Vehicle where vehicleid = @vehicleId";
 
             var data = await  _dataRepository.QueryAsync(sql, new { vehicleId });
@@ -48,7 +84,8 @@ namespace PAYG.Infrastructure.Repository
                 Id = vehicle.vehicleId,
                 RegistrationNumber = vehicle.registrationnumber,
                 Make = vehicle.make,
-                Model = vehicle.model
+                Model = vehicle.model,
+                Type = vehicle.type
             };
         }
 
