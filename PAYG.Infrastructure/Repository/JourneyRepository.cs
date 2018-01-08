@@ -1,4 +1,5 @@
-﻿using PAYG.Domain.Entities;
+﻿using PAYG.Domain.Common;
+using PAYG.Domain.Entities;
 using PAYG.Domain.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
@@ -49,6 +50,40 @@ namespace PAYG.Infrastructure.Repository
 
             var data = await _dataRepository.QueryAsync<int>(sql, parameters);
             return data.FirstOrDefault();
+        }
+
+        public async Task AddJourneyDetails(JourneyDetails journeyDetails, int journeyId)
+        {
+            
+            try
+            {
+                var sql = @"INSERT INTO JourneyDetails
+                (
+                    journey_id,
+                    longitude,
+					latitude
+                )
+                VALUES
+                (
+                    @journey_id,
+                    @longitude,
+                    @latitude
+                )";
+                var parameters = new
+                {
+                    journey_id = journeyId,
+                    longitude = journeyDetails.Longitude,
+                    latitude = journeyDetails.Latitude
+                };
+
+                await _dataRepository.ExecuteAsync(sql, parameters);
+            }
+            catch (Exception ex)
+            {
+                throw new ApiException(ex);
+            }
+            
+            
         }
 
         public Task<Journey> Get(int vehicleId, int userId)

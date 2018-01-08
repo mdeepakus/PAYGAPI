@@ -13,5 +13,7 @@ namespace PAYG.Domain.RepositoryInterfaces
         Task<Journey> Get(int vehicleId, int userId);
 
         Task<int> Add(Journey journey);
+
+        Task AddJourneyDetails(JourneyDetails journeyDetails, int journeyId);
     }
 }

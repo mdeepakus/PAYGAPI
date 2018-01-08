@@ -187,8 +187,7 @@ namespace PAYG.Server
             services.AddScoped<IUserValidator, UserNameValidator>();
             services.AddScoped<IJourneyService, JourneyService>();
             services.AddScoped<IJourneyRepository, JourneyRepository>();
-            services.AddScoped<IJourneyDetailsRepository, JourneyDetailsRepository>();
-
+            
         }
 
         /// <summary>

@@ -31,8 +31,16 @@ namespace PAYG.Server.Infrastructure.Filters
         {
             try
             {
+                context.HttpContext.Request.EnableRewind();
+
                 _transactionManager.BeginTransaction();
-                await next();
+
+                var actionExecutedContext = await next();
+                if (actionExecutedContext.Exception != null && !actionExecutedContext.ExceptionHandled)
+                {
+                    actionExecutedContext.ExceptionDispatchInfo.Throw();
+                }
+
                 _transactionManager.CommitTransaction();
             }
             catch (Exception ex)

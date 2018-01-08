@@ -12,28 +12,34 @@ namespace PAYG.Domain.Services
     public class JourneyService : IJourneyService
     {
         private readonly IJourneyRepository _journeyRepository;
-        private readonly IJourneyDetailsRepository _journeyDetailsRepository;
-
-        public JourneyService(IJourneyRepository journey, IJourneyDetailsRepository journeyDetailsRepository)
+      
+        public JourneyService(IJourneyRepository journey)
         {
             _journeyRepository = journey;
-            _journeyDetailsRepository = journeyDetailsRepository;
         }
         public async Task<int> AddJourney(List<JourneyDetails> journeyDetails, Journey journey)
         {
-            int journeyId = await _journeyRepository.Add(journey);
-            if (journeyId > 0)
+            int journeyId;
+            try
             {
-                foreach (JourneyDetails details in journeyDetails)
+                journeyId = await _journeyRepository.Add(journey);
+                if (journeyId > 0)
                 {
-                    await _journeyDetailsRepository.Add(details, journeyId);
+                    foreach (JourneyDetails details in journeyDetails)
+                    {
+                        await _journeyRepository.AddJourneyDetails(details, journeyId);
+                    }
+                }
+                else
+                {
+                    throw new ApiException("Failed to save journey!!!");
                 }
             }
-            else
+            catch(Exception ex)
             {
-                throw new ApiException("Failed to save journey!!!"); 
+                throw new ApiException(ex);
             }
-
+            
             return journeyId;
         }
     }
